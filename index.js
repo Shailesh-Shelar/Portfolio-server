@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const dbURL = process.env.DBURL || "mongodb://127.0.0.1:27017";
+const dbURL = process.env.DBURL;
 const port = process.env.PORT || 3000;
 const dbName = process.env.DB_NAME || "test";
 
